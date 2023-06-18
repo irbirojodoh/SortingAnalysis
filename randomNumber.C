@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-void generateRandomNumbersToFile(const char* filename, int count)
+void generateRandomNumbersToFile(const char *filename, int count)
 {
-    FILE* file = fopen(filename, "w");
+    FILE *file = fopen(filename, "w");
     if (!file)
     {
         printf("Failed to create the file: %s\n", filename);

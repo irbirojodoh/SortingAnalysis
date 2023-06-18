@@ -76,8 +76,8 @@ void quicksort(int array[], int low, int high)
 
 int main()
 {
-        const char *filename = "data.csv";
-int *numbers = (int *)malloc(MAX_ARRAY_SIZE * sizeof(int));
+    const char *filename = "data.csv";
+    int *numbers = (int *)malloc(MAX_ARRAY_SIZE * sizeof(int));
     if (numbers == NULL)
     {
         printf("Failed to allocate memory for the array\n");
@@ -91,8 +91,6 @@ int *numbers = (int *)malloc(MAX_ARRAY_SIZE * sizeof(int));
         free(numbers);
         return 1;
     }
-
-
 
     clock_t start = clock();
     quicksort(numbers, 0, count - 1);

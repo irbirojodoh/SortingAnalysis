@@ -64,9 +64,7 @@ int main()
         printf("Failed to allocate memory for the array\n");
         return 1;
     }
-
     int count = readCSV(filename, numbers);
-
     if (count == -1)
     {
         free(numbers);
@@ -77,12 +75,6 @@ int main()
     bubbleSort(numbers, count);
     clock_t end = clock();
     double elapsedTime = (double)(end - start) / CLOCKS_PER_SEC;
-
-    // printf("Sorted array: ");
-    // for (int i = 0; i < count; i++)
-    // {
-    //     printf("%d ", numbers[i]);
-    // }
     printf("\n");
 
     printf("Time taken to sort using BubbleSort: %.10f seconds.\n", elapsedTime);
