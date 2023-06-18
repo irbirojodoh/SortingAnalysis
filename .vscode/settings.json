@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        ".css": "tailwindcss",
+        "QuickSort.C": "cpp",
+        "BubbleSort.C": "cpp",
+        "tempCodeRunnerFile.C": "cpp",
+        "randomNumber.C": "cpp"
+    }
+}
